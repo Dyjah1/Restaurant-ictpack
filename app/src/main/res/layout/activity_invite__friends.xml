@@ -37,29 +37,82 @@
             android:elevation="20dp"
             android:orientation="vertical">
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send invitation to download this application  to your friends"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="italic"
+                android:fontFamily="cursive"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite friends via..."
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="italic"
+                android:fontFamily="cursive"/>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/whatsapp"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="60dp"
                     android:id="@+id/whatsapp"/>
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/message"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="60dp"
                     android:id="@+id/message"/>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="cursive"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/viawhatsapp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="cursive"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/viamessage"/>
+
+
+            </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -67,22 +120,76 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/twitter"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60dp"
                     android:id="@+id/twitter"/>
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/facebook"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60dp"
                     android:id="@+id/facebook"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="cursive"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/viatwitter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="cursive"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/viafacebook"/>
+
+
+            </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/gmail"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/gmail"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gmail"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="cursive"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/viagmail"/>
+
+
 
 
 
@@ -91,21 +198,6 @@
         </ScrollView>
 
     </RelativeLayout>
-
-    <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/header"
-        android:id="@+id/design_navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:menu="@menu/navigation_menu"
-        android:background="#424242"
-        app:itemTextColor="#fff"
-        app:itemIconTint="#fff"
-        android:layout_gravity="start">
-
-
-    </android.support.design.widget.NavigationView>
-
 
 
 </android.support.v4.widget.DrawerLayout>

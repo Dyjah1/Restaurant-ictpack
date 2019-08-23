@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Invite_Friends"></activity>
+        <activity android:name=".Keyboard" />
+        <activity android:name=".Invite_Friends" />
         <activity android:name=".Top_up_account" />
         <activity android:name=".Send_friend_money" />
         <activity android:name=".MainActivity">

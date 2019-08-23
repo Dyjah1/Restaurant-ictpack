@@ -16,11 +16,13 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
-public class Home extends AppCompatActivity {
+public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     android.support.v7.widget.Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private Button placeOrder;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,9 @@ public class Home extends AppCompatActivity {
 
         //NavigationView navigationView = (NavigationView)findViewById(R.id.design_navigation_view);
         placeOrder = (Button)findViewById(R.id.place_order);
+        NavigationView mNavigationView = (NavigationView) findViewById(R.id.design_navigation_view);
+
+
         placeOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +41,13 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        if (mNavigationView != null) {
+            mNavigationView.setNavigationItemSelectedListener(this);
+        }
+
+
+
 
         toolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
@@ -98,13 +110,21 @@ public class Home extends AppCompatActivity {
         if (id == R.id.nav1) {
             Intent intent= new Intent(Home.this,Send_friend_money.class);
             startActivity(intent);
-        } else if (id == R.id.nav2) {
+        }
+        else if (id == R.id.nav2) {
+            Intent intent= new Intent(Home.this,Top_up_account.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav3) {
+        }
+        else if (id == R.id.nav3) {
+            Intent intent= new Intent(Home.this,Invite_Friends.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav4) {
+        }
+        else if (id == R.id.nav4) {
 
-        } else if (id == R.id.nav5) {
+        }
+        else if (id == R.id.nav5) {
 
         }
 

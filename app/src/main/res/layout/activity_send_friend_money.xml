@@ -216,18 +216,5 @@
 
     </RelativeLayout>
 
-    <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/header"
-        android:id="@+id/design_navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:menu="@menu/navigation_menu"
-        android:background="#424242"
-        app:itemTextColor="#fff"
-        app:itemIconTint="#fff"
-        android:layout_gravity="start">
-
-
-    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
